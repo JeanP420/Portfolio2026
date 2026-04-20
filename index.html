@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jean Privat — Portfolio MITIC</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <span class="nav-logo">JP<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#about">Profil</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets-perso">Projets perso</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-burger" id="navBurger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="about">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">MITIC · Promotion 2025</div>
+      <h1 class="hero-name">Jean <span class="accent">Privat</span></h1>
+      <p class="hero-title">Manager des Technologies de l'Information,<br>de la Communication et du Commerce</p>
+      <p class="hero-desc">
+        Alternant en entreprise industrielle, je mets en œuvre des solutions numériques concrètes :
+        digitalisation des processus de production, analyse de données, infrastructure réseau et projets IA.
+        Passionné par l'auto-hébergement, l'IA locale et l'automatisation.
+      </p>
+      <div class="hero-tags">
+        <span class="tag">Docker</span>
+        <span class="tag">Python</span>
+        <span class="tag">SQL</span>
+        <span class="tag">IA / LLM</span>
+        <span class="tag">Réseau / NAS</span>
+        <span class="tag">WordPress</span>
+        <span class="tag">Home Automation</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#competences" class="btn btn-primary">Voir mes compétences</a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hc-header">
+          <span class="hc-dot red"></span>
+          <span class="hc-dot yellow"></span>
+          <span class="hc-dot green"></span>
+          <span class="hc-title">jean@mitic ~ </span>
+        </div>
+        <div class="hc-body">
+          <p><span class="kw">const</span> <span class="var">profile</span> = {</p>
+          <p>&nbsp;&nbsp;<span class="key">nom</span>: <span class="str">"Jean Privat"</span>,</p>
+          <p>&nbsp;&nbsp;<span class="key">formation</span>: <span class="str">"MITIC25"</span>,</p>
+          <p>&nbsp;&nbsp;<span class="key">statut</span>: <span class="str">"Alternant"</span>,</p>
+          <p>&nbsp;&nbsp;<span class="key">stacks</span>: [</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"Docker"</span>, <span class="str">"Python"</span>,</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"SQL"</span>, <span class="str">"LLM local"</span>,</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">"*arr stack"</span>, <span class="str">"NAS"</span></p>
+          <p>&nbsp;&nbsp;],</p>
+          <p>&nbsp;&nbsp;<span class="key">passions</span>: <span class="str">"IA · Infra · Data"</span></p>
+          <p>};</p>
+          <p class="cursor-line"><span class="prompt">▶</span> <span class="blink">_</span></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- COMPETENCES -->
+  <section class="section" id="competences">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Référentiel MITIC</span>
+        <h2>Blocs de compétences</h2>
+        <p>Cliquez sur un projet pour voir le détail</p>
+      </div>
+
+      <div class="blocks-grid">
+
+        <!-- BLOC 1 -->
+        <div class="bloc" data-color="orange">
+          <div class="bloc-header">
+            <div class="bloc-icon">🚀</div>
+            <div>
+              <span class="bloc-num">Bloc 1</span>
+              <h3>Concevoir & Réaliser des projets numériques innovants</h3>
+            </div>
+          </div>
+          <div class="projects-list">
+
+            <div class="project-card" data-project="digibat">
+              <div class="pc-top">
+                <span class="pc-matiere">Gestion de projet</span>
+                <span class="pc-level autonomous">Autonome</span>
+              </div>
+              <h4>DIGIBAT/PROJECT — Suivi de production numérique</h4>
+              <p>Pilotage du suivi de production en remplacement du papier, avec chiffrage.</p>
+              <span class="pc-cta">Voir le projet →</span>
+            </div>
+
+            <div class="project-card" data-project="streamlit">
+              <div class="pc-top">
+                <span class="pc-matiere">Innovations & technologies</span>
+                <span class="pc-level operator">Opérateur</span>
+              </div>
+              <h4>Prototype Streamlit + Gemini / Claude</h4>
+              <p>Interface IA pour le suivi et l'analyse de données de production.</p>
+              <span class="pc-cta">Voir le projet →</span>
+            </div>
+
+            <div class="project-card" data-project="veille">
+              <div class="pc-top">
+                <span class="pc-matiere">Veille & prospective</span>
+                <span class="pc-level autonomous">Autonome</span>
+              </div>
+              <h4>Sécurité Docker / NAS & veille IA</h4>
+              <p>Docker sur NAS local, utilisation IA et veille des avancées technologiques.</p>
+              <span class="pc-cta">Voir le projet →</span>
+            </div>
+
+            <div class="project-card" data-project="ux">
+              <div class="pc-top">
+                <span class="pc-matiere">Marketing / UX</span>
+                <span class="pc-level operator">Opérateur</span>
+              </div>
+              <h4>UX pour les opérateurs en atelier</h4>
+              <p>Conception d'interfaces adaptées aux contraintes terrain des opérateurs.</p>
+              <span class="pc-cta">Voir le projet →</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- BLOC 2 -->
+        <div class="bloc" data-color="orange-dark">
+          <div class="bloc-header">
+            <div class="bloc-icon">📊</div>
+            <div>
+              <span class="bloc-num">Bloc 2</span>
+              <h3>Piloter des projets et services numériques</h3>
+            </div>
+          </div>
+          <div class="projects-list">
+
+            <div class="project-card" data-project="sql-data">
+              <div class="pc-top">
+                <span class="pc-matiere">Analyse de données</span>
+                <span class="pc-level autonomous">Autonome</span>
+              </div>
+              <h4>Extraction SQL Caraoline + Python / Excel</h4>
+              <p>Valorisation des données de suivi de production pour affiner les chiffres de prod.</p>
+              <span class="pc-cta">Voir le projet →</span>
+            </div>
+
+            <div class="project-card" data-project="erp">
+              <div class="pc-top">
+                <span class="pc-matiere">Base de données</span>
+                <span class="pc-level autonomous">Autonome</span>
+              </div>
+              <h4>Requêtage ERP pour le reporting</h4>
+              <p>Structuration et requêtage de la base ERP pour alimenter les tableaux de bord.</p>
+              <span class="pc-cta">Voir le projet →</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- BLOC 3 -->
+        <div class="bloc" data-color="yellow">
+          <div class="bloc-header">
+            <div class="bloc-icon">🔧</div>
+            <div>
+              <span class="bloc-num">Bloc 3</span>
+              <h3>Mobiliser les expertises numériques & managériales</h3>
+            </div>
+          </div>
+          <div class="projects-list">
+
+            <div class="project-card" data-project="infra">
+              <div class="pc-top">
+                <span class="pc-matiere">Technologie Internet</span>
+                <span class="pc-level autonomous">Autonome</span>
+              </div>
+              <h4>Maintenance parc info & Docker</h4>
+              <p>Maintenance du parc informatique, déploiement Docker, gestionnaires de mots de passe.</p>
+              <span class="pc-cta">Voir le projet →</span>
+            </div>
+
+            <div class="project-card" data-project="nas">
+              <div class="pc-top">
+                <span class="pc-matiere">Réseaux</span>
+                <span class="pc-level autonomous">Autonome</span>
+              </div>
+              <h4>Configuration & sécurisation réseau (NAS)</h4>
+              <p>Mise en place et sécurisation du réseau local avec NAS professionnel.</p>
+              <span class="pc-cta">Voir le projet →</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- BLOC 4 -->
+        <div class="bloc" data-color="blue">
+          <div class="bloc-header">
+            <div class="bloc-icon">🤝</div>
+            <div>
+              <span class="bloc-num">Bloc 4</span>
+              <h3>Construire la coopération entre les parties prenantes</h3>
+            </div>
+          </div>
+          <div class="projects-list">
+
+            <div class="project-card" data-project="wordpress">
+              <div class="pc-top">
+                <span class="pc-matiere">Communication WEB</span>
+                <span class="pc-level operator">Opérateur</span>
+              </div>
+              <h4>WordPress & fiches produits TecDoc</h4>
+              <p>Maintenance WordPress, relation prestataire e-commerce, formulaires salons.</p>
+              <span class="pc-cta">Voir le projet →</span>
+            </div>
+
+            <div class="project-card" data-project="diagnostic">
+              <div class="pc-top">
+                <span class="pc-matiere">Diagnostic organisationnel</span>
+                <span class="pc-level fp">Force de prop.</span>
+              </div>
+              <h4>Diagnostic des pertes de temps admin</h4>
+              <p>Identification des frictions et pertes de temps administratives en production.</p>
+              <span class="pc-cta">Voir le projet →</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS PERSO -->
+  <section class="section section-dark" id="projets-perso">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">En dehors du cursus</span>
+        <h2>Projets personnels</h2>
+        <p>Infrastructure, IA locale et automatisation — par passion</p>
+      </div>
+
+      <div class="perso-grid">
+
+        <div class="perso-card" data-project="llm-local">
+          <div class="perso-icon">🤖</div>
+          <div class="perso-content">
+            <h4>LLM en local</h4>
+            <p>Installation et configuration de modèles de langage sur des PC personnels via Ollama.</p>
+            <div class="perso-tags">
+              <span>Ollama</span><span>Python</span><span>LLM</span>
+            </div>
+          </div>
+          <span class="pc-cta">Détails →</span>
+        </div>
+
+        <div class="perso-card" data-project="arr-stack">
+          <div class="perso-icon">🎬</div>
+          <div class="perso-content">
+            <h4>Stack multimédia *arr + IA</h4>
+            <p>Serveur multimédia avec Radarr, Sonarr, etc. sur Docker. OpenWebUI connecté pour recommander et télécharger des films à la demande.</p>
+            <div class="perso-tags">
+              <span>Docker</span><span>Radarr</span><span>Sonarr</span><span>Nginx</span><span>Cloudflare</span>
+            </div>
+          </div>
+          <span class="pc-cta">Détails →</span>
+        </div>
+
+        <div class="perso-card" data-project="openwebui">
+          <div class="perso-icon">💬</div>
+          <div class="perso-content">
+            <h4>OpenWebUI — Interface IA unifiée</h4>
+            <p>Déploiement d'OpenWebUI pour centraliser l'accès aux modèles locaux et distants avec personnalisation des agents.</p>
+            <div class="perso-tags">
+              <span>OpenWebUI</span><span>Ollama</span><span>Docker</span>
+            </div>
+          </div>
+          <span class="pc-cta">Détails →</span>
+        </div>
+
+        <div class="perso-card" data-project="homeassistant">
+          <div class="perso-icon">🏠</div>
+          <div class="perso-content">
+            <h4>Home Assistant</h4>
+            <p>Serveur domotique auto-hébergé : automatisations, intégration des appareils et tableau de bord centralisé.</p>
+            <div class="perso-tags">
+              <span>Home Assistant</span><span>Docker</span><span>MQTT</span>
+            </div>
+          </div>
+          <span class="pc-cta">Détails →</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <div class="section-header">
+        <span class="section-label">Disponible en alternance</span>
+        <h2>Me contacter</h2>
+      </div>
+      <div class="contact-card">
+        <div class="contact-info">
+          <p>Je suis actuellement en alternance dans le cadre du cursus MITIC (promotion 2025).</p>
+          <p>N'hésitez pas à me contacter pour échanger autour de mes projets ou d'opportunités.</p>
+          <div class="contact-links">
+            <a href="mailto:jean.privat@example.com" class="contact-link">
+              <span>✉</span> jean.privat@example.com
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="contact-link">
+              <span>in</span> LinkedIn
+            </a>
+            <a href="https://github.com/jeanp420" target="_blank" class="contact-link">
+              <span>⌥</span> GitHub
+            </a>
+          </div>
+        </div>
+        <div class="contact-skills">
+          <h4>Compétences techniques</h4>
+          <div class="skills-bars">
+            <div class="skill-bar">
+              <span>Docker / Infrastructure</span>
+              <div class="bar"><div class="bar-fill" style="--w:88%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <span>Python / Data</span>
+              <div class="bar"><div class="bar-fill" style="--w:75%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <span>SQL / ERP</span>
+              <div class="bar"><div class="bar-fill" style="--w:70%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <span>IA / LLM</span>
+              <div class="bar"><div class="bar-fill" style="--w:80%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <span>Réseau / NAS</span>
+              <div class="bar"><div class="bar-fill" style="--w:78%"></div></div>
+            </div>
+            <div class="skill-bar">
+              <span>WordPress / Web</span>
+              <div class="bar"><div class="bar-fill" style="--w:65%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Jean Privat · MITIC25 · Portfolio 2026</p>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose" aria-label="Fermer">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
