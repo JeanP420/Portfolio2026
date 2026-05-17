@@ -47,16 +47,49 @@ function openModal(projectId) {
        <div class="modal-tags">${p.stack.map(s => `<span class="blue">${s}</span>`).join('')}</div>`
     : '';
 
+  const galleryHtml = p.images && p.images.length
+    ? `<h3>Aperçu de l'interface</h3>
+       <div class="modal-gallery">
+         ${p.images.map((img, i) => `
+           <div class="gallery-item ${i === 0 ? 'active' : ''}" data-index="${i}">
+             <img src="${img.src}" alt="${img.caption}" loading="lazy" />
+             <span class="gallery-caption">${img.caption}</span>
+           </div>`).join('')}
+       </div>
+       <div class="gallery-thumbs">
+         ${p.images.map((img, i) => `
+           <button class="gallery-thumb ${i === 0 ? 'active' : ''}" data-index="${i}" aria-label="${img.caption}">
+             <img src="${img.src}" alt="${img.caption}" loading="lazy" />
+           </button>`).join('')}
+       </div>`
+    : '';
+
   modalContent.innerHTML = `
     <div class="modal-badge">${p.badge}</div>
     <h2>${p.title}</h2>
     <p class="modal-desc">${p.description}</p>
     <h3>Ce que j'ai fait</h3>
     <ul class="modal-list">${actionsHtml}</ul>
+    ${galleryHtml}
     ${schemaHtml}
     ${stackHtml}
     ${highlightsHtml}
   `;
+
+  // Wire up gallery thumb clicks
+  if (p.images && p.images.length) {
+    const items = modalContent.querySelectorAll('.gallery-item');
+    const thumbs = modalContent.querySelectorAll('.gallery-thumb');
+    thumbs.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        const idx = parseInt(thumb.dataset.index);
+        items.forEach(el => el.classList.remove('active'));
+        thumbs.forEach(el => el.classList.remove('active'));
+        items[idx].classList.add('active');
+        thumb.classList.add('active');
+      });
+    });
+  }
 
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
