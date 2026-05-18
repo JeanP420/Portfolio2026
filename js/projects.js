@@ -60,7 +60,13 @@ const PROJECTS = {
       "Intégration des retours dans les versions suivantes"
     ],
     stack: ["Figma", "Streamlit", "UX Research", "Tests utilisateurs"],
-    highlights: ["Taux d'adoption > 85%", "0 formation formelle requise", "Validé directement en conditions réelles"]
+    highlights: ["Taux d'adoption > 85%", "0 formation formelle requise", "Validé directement en conditions réelles"],
+    images: [
+      { src: "images/OFdetail1.png", caption: "Vue détail OF — étape 1" },
+      { src: "images/OFdetail.png",  caption: "Vue détail OF — vue complète" },
+      { src: "images/OFList.png",    caption: "Liste des ordres de fabrication" },
+      { src: "images/OFUser.png",    caption: "Interface opérateur" }
+    ]
   },
 
   "sql-data": {
